@@ -37,3 +37,11 @@ python3 secureseal.py open --pki-dir pki \
 --recipient users/Arbind.p12 --recipient-pass arbindpass \
 --package sealed.json --outfile opened.txt --replay-db replay.db
 ```  
+## Security Features
+
+- AES-256-GCM for authenticated encryption
+- RSA-OAEP for key wrapping
+- RSA-PSS for digital signatures
+- SHA-256 hashing for integrity
+- PKI certificate validation
+- Replay protection using SQLite doc_id tracking
